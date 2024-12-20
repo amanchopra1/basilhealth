@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Me - Basilhealth</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Me</h1>
+    </header>
+
+    <!-- Me Section -->
+    <section class="me-section">
+      <div class="menu-item">
+        <a href="#profile">
+          <span class="icon">👤</span>
+          <span class="label">Profile</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#settings">
+          <span class="icon">⚙️</span>
+          <span class="label">Settings</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#notification-preference">
+          <span class="icon">🔔</span>
+          <span class="label">Notification Preference</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#appearances">
+          <span class="icon">🎨</span>
+          <span class="label">Appearances</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#refer-friend">
+          <span class="icon">🤝</span>
+          <span class="label">Refer a Friend</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="analysis.html">
+          <span class="icon">📜</span>
+          <span class="label">Session History</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#my-progress">
+          <span class="icon">📈</span>
+          <span class="label">My Progress</span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#latest-milestone">
+          <span class="icon">🏆</span>
+          <span class="label">Latest Milestone</span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    /* Mobile Bottom Navbar */
+    .mobile-bottom-navbar {
+      max-width: 400px; /* Set width to 800px */
+      margin: 0 auto; /* Center the navbar */
+      background-color: #333; /* Background color */
+      padding: 10px 0; /* Padding for top and bottom */
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000; /* Keep navbar on top */
+    }
+  
+    /* Navbar unordered list */
+    .mobile-bottom-navbar ul {
+      display: flex;
+      justify-content: space-around; /* Distribute the items evenly */
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    /* Navbar list item */
+    .mobile-bottom-navbar li {
+      text-align: center; /* Center align the text */
+    }
+  
+    /* Navbar links */
+    .mobile-bottom-navbar a {
+      color: white; /* Text color */
+      text-decoration: none; /* Remove underline */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 15px;
+    }
+  
+    /* Navbar icon */
+    .mobile-bottom-navbar .icon {
+      font-size: 1.5em; /* Increase size of the icon */
+    }
+  
+    /* Navbar label */
+    .mobile-bottom-navbar .label {
+      font-size: 0.9em; /* Adjust label font size */
+    }
+  
+    /* Hover effect for links */
+    .mobile-bottom-navbar a:hover {
+      background-color: #575757; /* Change background color on hover */
+      border-radius: 5px; /* Rounded corners on hover */
+    }
+  </style>
+  
+  <nav class="mobile-bottom-navbar">
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="icon">🏠</span>
+          <span class="label">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="me.html">
+          <span class="icon">👤</span>
+          <span class="label">Me</span>
+        </a>
+      </li>
+      <li>
+        <a href="avatar.html">
+          <span class="icon">🤖</span>
+          <span class="label">AI Therapist</span>
+        </a>
+      </li>
+      <li>
+        <a href="goals.html">
+          <span class="icon">🎯</span>
+          <span class="label">Goals</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+</body>
+</html>

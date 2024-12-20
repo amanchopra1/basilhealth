@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basilhealth</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Basilhealth</h1>
+    </header>
+
+    <!-- Grid Section -->
+    <div class="grid">
+      <div class="box">
+        <h2>Assess Your Well-Being</h2>
+        <img src="toon1.jpg" alt="Toon 1">
+      </div>
+      <div class="box">
+        <h2>Find your Flow code</h2>
+        <img src="toon2.jpg" alt="Toon 2">
+      </div>
+      <div class="box">
+        <h2>Visualize Your Brain Power</h2>
+        <img src="toon3.jpg" alt="Toon 3">
+      </div>
+      <div class="box">
+        <h2>Insight into Meditation</h2>
+        <img src="toon4.jpg" alt="Toon 4">
+      </div>
+    </div>
+    
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid columns */
+        gap: 20px;
+      }
+    
+      .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        padding: 10px;
+        width: 100%; /* Make box width flexible */
+        aspect-ratio: 1; /* Ensure the box is square */
+        transition: transform 0.3s ease-in-out;
+        box-sizing: border-box; /* Ensures padding does not affect the size */
+      }
+    
+      .box:hover {
+        transform: scale(1.05); /* Add hover effect */
+      }
+    
+      .box img {
+        margin-top: 10px;
+        width: 50px; /* Adjust size of the toon */
+        height: auto;
+      }
+    
+      h2 {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 10px; /* Add space between text and image */
+      }
+    </style>
+
+    <!-- Start Training Button -->
+    <button class="start-training">Connect Your Device</button>
+
+    <!-- Horizontal Sliding Cards -->
+    <section class="horizontal-cards">
+      <h2>Recommended Meditations</h2>
+      <div class="slider">
+        <div class="card">Calm Your Mind</div>
+        <div class="card">Boost Focus</div>
+        <div class="card">Release Anxiety</div>
+        <div class="card">Deep Relaxation</div>
+        <div class="card">Improve Sleep</div>
+      </div>
+    </section>
+
+    <section class="horizontal-cards">
+    
+        <div class="slider">
+          <div class="card">Calm Your Mind</div>
+          <div class="card">Boost Focus</div>
+          <div class="card">Release Anxiety</div>
+          <div class="card">Deep Relaxation</div>
+          <div class="card">Improve Sleep</div>
+        </div>
+      </section>
+
+    <!-- Personalization Button -->
+    <button class="personalize-button">Personalize Your Recommendations</button>
+
+    <!-- Pop-up Personalization Window -->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <h3>Select Your Current Mood</h3>
+        <div class="mood-options">
+          <button class="mood">Calm 😊</button>
+          <button class="mood">Sad 😢</button>
+          <button class="mood">Tired 😴</button>
+          <button class="mood">Anxious 😟</button>
+          <button class="mood">Unsure 🤔</button>
+          <button class="mood">Panicked 😱</button>
+        </div>
+        <button class="close-popup">Close</button>
+      </div>
+    </div>
+
+    <!-- Dynamic Recommendations Section -->
+    <section class="horizontal-cards recommended-meditations"></section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+<style>
+  /* Mobile Bottom Navbar */
+  .mobile-bottom-navbar {
+    max-width: 400px; /* Set width to 800px */
+    margin: 0 auto; /* Center the navbar */
+    background-color: #333; /* Background color */
+    padding: 10px 0; /* Padding for top and bottom */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Keep navbar on top */
+  }
+
+  /* Navbar unordered list */
+  .mobile-bottom-navbar ul {
+    display: flex;
+    justify-content: space-around; /* Distribute the items evenly */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Navbar list item */
+  .mobile-bottom-navbar li {
+    text-align: center; /* Center align the text */
+  }
+
+  /* Navbar links */
+  .mobile-bottom-navbar a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  /* Navbar icon */
+  .mobile-bottom-navbar .icon {
+    font-size: 1.5em; /* Increase size of the icon */
+  }
+
+  /* Navbar label */
+  .mobile-bottom-navbar .label {
+    font-size: 0.9em; /* Adjust label font size */
+  }
+
+  /* Hover effect for links */
+  .mobile-bottom-navbar a:hover {
+    background-color: #575757; /* Change background color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+  }
+</style>
+
+<nav class="mobile-bottom-navbar">
+  <ul>
+    <li>
+      <a href="index.html">
+        <span class="icon">🏠</span>
+        <span class="label">Home</span>
+      </a>
+    </li>
+    <li>
+      <a href="me.html">
+        <span class="icon">👤</span>
+        <span class="label">Me</span>
+      </a>
+    </li>
+    <li>
+      <a href="avatar.html">
+        <span class="icon">🤖</span>
+        <span class="label">AI Therapist</span>
+      </a>
+    </li>
+    <li>
+      <a href="goals.html">
+        <span class="icon">🎯</span>
+        <span class="label">Goals</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</html>

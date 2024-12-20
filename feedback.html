@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #1a1a1a; color: #fff; text-align: center; padding: 20px;">
+
+  <div style="max-width: 400px; margin: auto; background: #333; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+    <header>
+      <h1 style="font-size: 2rem; margin-bottom: 10px;">Feedback</h1>
+      <p style="font-size: 1rem; margin-bottom: 20px;">Please give your Subjective Relaxation Score</p>
+    </header>
+
+    <form id="feedback-form" onsubmit="handleSubmit(event)" style="text-align: left;">
+      <label for="rating" style="display: block; font-size: 1rem; margin-bottom: 10px;">Your Relaxation Score (1-5):</label>
+      <select id="rating" name="rating" required style="width: 100%; padding: 10px; font-size: 1rem; border: 1px solid #555; border-radius: 5px; margin-bottom: 20px; background-color: #222; color: #fff;">
+        <option value="" disabled selected>Select</option>
+        <option value="1">1 - Poor</option>
+        <option value="2">2 - Fair</option>
+        <option value="3">3 - Good</option>
+        <option value="4">4 - Very Good</option>
+        <option value="5">5 - Excellent</option>
+      </select>
+
+      <label for="comments" style="display: block; font-size: 1rem; margin-bottom: 10px;">Your Comments:</label>
+      <textarea id="comments" name="comments" rows="2" placeholder="Write your feedback here..." required 
+        style="width: 100%; padding: 10px; font-size: 1rem; border: 1px solid #555; border-radius: 5px; margin-bottom: 20px; background-color: #222; color: #fff;"></textarea>
+
+      <button type="submit" class="submit-button" style="width: 100%; padding: 10px; font-size: 1rem; border: none; border-radius: 5px; background-color: #4caf50; color: #fff; cursor: pointer;">
+        Submit Feedback
+      </button>
+    </form>
+  </div>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const rating = document.getElementById('rating').value;
+      const comments = document.getElementById('comments').value;
+      if (rating && comments) {
+        alert(`Thank you for your feedback!\nRating: ${rating}\nComments: ${comments}`);
+        window.location.href = 'analysis.html'; // Redirect to analysis.html
+      }
+    }
+  </script>
+
+</body>
+
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault(); // Prevent form submission default behavior
+
+      // Collect form data
+      const rating = document.getElementById("rating").value;
+      const comments = document.getElementById("comments").value;
+
+      // Debugging: Log the data (Optional)
+      console.log("Feedback Submitted:", { rating, comments });
+
+      // Simulate storing feedback (can be replaced with a server-side call)
+      alert("Thank you for your feedback!");
+
+      // Redirect to analysis.html
+      window.location.href = "analysis.html";
+    }
+  </script>
+</body>
+
+<style>
+    /* Mobile Bottom Navbar */
+    .mobile-bottom-navbar {
+      max-width: 400px; /* Set width to 800px */
+      margin: 0 auto; /* Center the navbar */
+      background-color: #333; /* Background color */
+      padding: 10px 0; /* Padding for top and bottom */
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000; /* Keep navbar on top */
+    }
+  
+    /* Navbar unordered list */
+    .mobile-bottom-navbar ul {
+      display: flex;
+      justify-content: space-around; /* Distribute the items evenly */
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    /* Navbar list item */
+    .mobile-bottom-navbar li {
+      text-align: center; /* Center align the text */
+    }
+  
+    /* Navbar links */
+    .mobile-bottom-navbar a {
+      color: white; /* Text color */
+      text-decoration: none; /* Remove underline */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 15px;
+    }
+  
+    /* Navbar icon */
+    .mobile-bottom-navbar .icon {
+      font-size: 1.5em; /* Increase size of the icon */
+    }
+  
+    /* Navbar label */
+    .mobile-bottom-navbar .label {
+      font-size: 0.9em; /* Adjust label font size */
+    }
+  
+    /* Hover effect for links */
+    .mobile-bottom-navbar a:hover {
+      background-color: #575757; /* Change background color on hover */
+      border-radius: 5px; /* Rounded corners on hover */
+    }
+  </style>
+  
+  <nav class="mobile-bottom-navbar">
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="icon">🏠</span>
+          <span class="label">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="me.html">
+          <span class="icon">👤</span>
+          <span class="label">Me</span>
+        </a>
+      </li>
+      <li>
+        <a href="avatar.html">
+          <span class="icon">🤖</span>
+          <span class="label">AI Therapist</span>
+        </a>
+      </li>
+      <li>
+        <a href="goals.html">
+          <span class="icon">🎯</span>
+          <span class="label">Goals</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+</html>

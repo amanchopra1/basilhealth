@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session Analysis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container analysis-container">
+    <h1>Session Analysis</h1>
+
+    <!-- Graph Image Centered -->
+    <div class="graph-section">
+      <img src="graph.jpg" alt="Analysis Graph" class="centered-image">
+    </div>
+
+    <div class="score-section">
+      <p><strong>AI Stress Score:</strong> <span id="ai-stress-score">42%</span></p>
+      <p><strong>AI Anxiety Score:</strong> <span id="ai-anxiety-score">38%</span></p>
+      <p><strong>Subjective Rating:</strong> <span id="subjective-rating">4</span></p>
+    </div>
+
+    <div class="comparison-section">
+      <h2>Comparison with Subjective Rating</h2>
+      <!-- Add comparison content or graphs here -->
+    </div>
+
+    <div class="details-section">
+      <h2>Detailed Insights</h2>
+      <p><strong>Band Powers:</strong> Delta: 12, Theta: 8, Alpha: 6</p>
+      <p><strong>Stress Reduction:</strong> 15%</p>
+      <p><strong>Anxiety Reduction:</strong> 10%</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+
+<style>
+    /* Mobile Bottom Navbar */
+    .mobile-bottom-navbar {
+      max-width: 400px; /* Set width to 800px */
+      margin: 0 auto; /* Center the navbar */
+      background-color: #333; /* Background color */
+      padding: 10px 0; /* Padding for top and bottom */
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000; /* Keep navbar on top */
+    }
+  
+    /* Navbar unordered list */
+    .mobile-bottom-navbar ul {
+      display: flex;
+      justify-content: space-around; /* Distribute the items evenly */
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    /* Navbar list item */
+    .mobile-bottom-navbar li {
+      text-align: center; /* Center align the text */
+    }
+  
+    /* Navbar links */
+    .mobile-bottom-navbar a {
+      color: white; /* Text color */
+      text-decoration: none; /* Remove underline */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 15px;
+    }
+  
+    /* Navbar icon */
+    .mobile-bottom-navbar .icon {
+      font-size: 1.5em; /* Increase size of the icon */
+    }
+  
+    /* Navbar label */
+    .mobile-bottom-navbar .label {
+      font-size: 0.9em; /* Adjust label font size */
+    }
+  
+    /* Hover effect for links */
+    .mobile-bottom-navbar a:hover {
+      background-color: #575757; /* Change background color on hover */
+      border-radius: 5px; /* Rounded corners on hover */
+    }
+  </style>
+  
+  <nav class="mobile-bottom-navbar">
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="icon">🏠</span>
+          <span class="label">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="me.html">
+          <span class="icon">👤</span>
+          <span class="label">Me</span>
+        </a>
+      </li>
+      <li>
+        <a href="avatar.html">
+          <span class="icon">🤖</span>
+          <span class="label">AI Therapist</span>
+        </a>
+      </li>
+      <li>
+        <a href="goals.html">
+          <span class="icon">🎯</span>
+          <span class="label">Goals</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+</html>

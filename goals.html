@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goals</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2e2e2e;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    .goal-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .goal-card {
+      display: flex;
+      align-items: center;
+      background-color: #3b3b3b;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .goal-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .goal-card img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .goal-content {
+      flex: 1;
+    }
+
+    .goal-tag {
+      background-color: #ffcccb;
+      color: #d9534f;
+      padding: 5px 10px;
+      font-size: 12px;
+      border-radius: 20px;
+      margin-bottom: 5px;
+    }
+
+    .goal-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .goal-description {
+      font-size: 14px;
+      color: #bbbbbb;
+    }
+
+    .goal-stats {
+      font-size: 12px;
+      color: #999;
+      margin-top: 5px;
+    }
+
+    @media (min-width: 768px) {
+      .goal-list {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Pick a Goal</h1>
+    </header>
+    <div class="goal-list">
+      <div class="goal-card">
+        <img src="https://via.placeholder.com/80" alt="Goal 1">
+        <div class="goal-content">
+          <div class="goal-tag">Free</div>
+          <div class="goal-title">Unlock Potential</div>
+          <div class="goal-description">Harness your inner strengths and start achieving your dreams in just 10 minutes.</div>
+          <div class="goal-stats">👥 2,345 completed</div>
+        </div>
+      </div>
+
+      <div class="goal-card">
+        <img src="https://via.placeholder.com/80" alt="Goal 2">
+        <div class="goal-content">
+          <div class="goal-tag">Premium</div>
+          <div class="goal-title">Embrace Tranquility</div>
+          <div class="goal-description">Master mindfulness and inner peace with simple daily practices.</div>
+          <div class="goal-stats">👥 5,678 completed</div>
+        </div>
+      </div>
+
+      <div class="goal-card">
+        <img src="https://via.placeholder.com/80" alt="Goal 3">
+        <div class="goal-content">
+          <div class="goal-tag">Premium</div>
+          <div class="goal-title">Live with Awareness</div>
+          <div class="goal-description">Improve focus and clarity with guided mindfulness sessions.</div>
+          <div class="goal-stats">👥 6,742 completed</div>
+        </div>
+      </div>
+
+      <div class="goal-card">
+        <img src="https://via.placeholder.com/80" alt="Goal 4">
+        <div class="goal-content">
+          <div class="goal-tag">Premium</div>
+          <div class="goal-title">Achieve Your Best</div>
+          <div class="goal-description">Align actions with goals to unlock your full potential.</div>
+          <div class="goal-stats">👥 1,234 completed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+  <style>
+    /* Mobile Bottom Navbar */
+    .mobile-bottom-navbar {
+      max-width: 400px; /* Set width to 800px */
+      margin: 0 auto; /* Center the navbar */
+      background-color: #333; /* Background color */
+      padding: 10px 0; /* Padding for top and bottom */
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000; /* Keep navbar on top */
+    }
+  
+    /* Navbar unordered list */
+    .mobile-bottom-navbar ul {
+      display: flex;
+      justify-content: space-around; /* Distribute the items evenly */
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    /* Navbar list item */
+    .mobile-bottom-navbar li {
+      text-align: center; /* Center align the text */
+    }
+  
+    /* Navbar links */
+    .mobile-bottom-navbar a {
+      color: white; /* Text color */
+      text-decoration: none; /* Remove underline */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 15px;
+    }
+  
+    /* Navbar icon */
+    .mobile-bottom-navbar .icon {
+      font-size: 1.5em; /* Increase size of the icon */
+    }
+  
+    /* Navbar label */
+    .mobile-bottom-navbar .label {
+      font-size: 0.9em; /* Adjust label font size */
+    }
+  
+    /* Hover effect for links */
+    .mobile-bottom-navbar a:hover {
+      background-color: #575757; /* Change background color on hover */
+      border-radius: 5px; /* Rounded corners on hover */
+    }
+  </style>
+  
+  <nav class="mobile-bottom-navbar">
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="icon">🏠</span>
+          <span class="label">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="me.html">
+          <span class="icon">👤</span>
+          <span class="label">Me</span>
+        </a>
+      </li>
+      <li>
+        <a href="avatar.html">
+          <span class="icon">🤖</span>
+          <span class="label">AI Therapist</span>
+        </a>
+      </li>
+      <li>
+        <a href="goals.html">
+          <span class="icon">🎯</span>
+          <span class="label">Goals</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
+
